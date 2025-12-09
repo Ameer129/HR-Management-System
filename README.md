@@ -1,115 +1,167 @@
 ﻿# HR-Management-System
-🏗️ Tech Stack
-Frontend
+Here is the **exact README.md** — clean, polished, and ready to paste directly into GitHub.
 
-React.js
+---
 
-React Router
+# 🚀 HR Management System (HRMS) – Full Stack Project
 
-Axios
+A complete **Human Resource Management System** built using **React**, **Spring Boot**, and **MySQL**.
+The system supports **multi-company (multi-tenant)** architecture with automated attendance, payroll generation, leave management, and secure role-based access control.
 
-Bootstrap 5
+---
 
-React-Bootstrap
+## 🌟 Key Highlights
 
-React-Toastify
+* Multi-tenant platform with company-level data isolation
+* Automated attendance + payroll processing using schedulers
+* Role-based dashboards (Super Admin, Company Admin, HR, Manager, Employee)
+* JWT authentication and secure REST APIs
+* Real-time attendance tracking (Clock-In / Clock-Out)
+* Downloadable PDF payslips
+* Full employee lifecycle management
 
-Backend
+---
 
-Spring Boot
+## 🏗️ Tech Stack
 
-Spring Security + JWT
+### **Frontend**
 
-Spring Data JPA
+* React.js
+* React Router
+* Axios
+* Bootstrap 5
+* React-Bootstrap
+* React-Toastify
 
-MySQL
+### **Backend**
 
-Scheduled Tasks (Cron Jobs)
+* Spring Boot
+* Spring Security + JWT
+* Spring Data JPA
+* MySQL
+* Cron Schedulers
+* iText PDF Generator
 
-iText PDF Generator
+---
 
-🧩 System Architecture
-High-Level Flow
-User Action → React Component → Axios API → Spring Controller → Service Layer
-→ JPA Repository → MySQL Database → Response → React UI Update
+## 🔐 User Roles & Permissions
 
-🔐 User Roles & Permissions
-Role	Capabilities
-Super Admin	Manages companies, approvals, overall monitoring
-Company Admin	Manages departments, designations, HR, managers
-HR Manager	Employee onboarding, attendance approval, payroll
-Project Manager	Team attendance & leave approvals
-Employee	Clock in/out, apply leave, view payslips
-🔄 Core Features
-1️⃣ User Authentication & Security
+| Role                | Responsibilities                                          |
+| ------------------- | --------------------------------------------------------- |
+| **Super Admin**     | Approves/rejects companies, monitors platform             |
+| **Company Admin**   | Manages departments, designations, HR, managers           |
+| **HR Manager**      | Employee onboarding, attendance & leave approval, payroll |
+| **Project Manager** | Manages team attendance & leaves                          |
+| **Employee**        | Clock-in/out, apply leave, view/download payslips         |
 
-Login with JWT token generation
+---
 
-Password hashing using BCrypt
+# 🔄 Core Features
 
-Session-less secure architecture
+## 1️⃣ Authentication & Security
 
-Frontend route protection
+* JWT-based login
+* Password hashing (BCrypt)
+* Role-based access
+* Protected frontend routes
 
-2️⃣ Employee Attendance Automation
+---
 
-Live clock-in / clock-out
+## 2️⃣ Attendance Management
 
-Real-time timer UI using setInterval
+* Clock In / Clock Out with timestamps
+* Real-time timer updates in UI
+* Monthly auto-generation of attendance sheets
+* Auto-mark absent employees daily
 
-Attendance stored with timestamps
+---
 
-Schedulers:
+## 3️⃣ Payroll Management
 
-Monthly attendance sheet generation
+* Auto payroll generation on 1st of every month
+* Salary structure calculation (Basic, HRA, Allowances)
+* Deductions (PF, TDS, Professional Tax)
+* Generate and download PDF payslips
 
-Daily absentee marking
+---
 
-3️⃣ Payroll Processing
+## 4️⃣ Leave Management
 
-Auto-generates monthly payroll
+* Employees submit leave requests
+* Managers approve/reject with comments
+* Status tracking + notifications
 
-Calculates:
+---
+.
+## 5️⃣ Company Structure
 
-Basic Salary
+* Manage departments
+* Manage designations
+* Add and display company holidays
 
-Allowances
+---
 
-PF, TDS, Professional Tax
+# 🧩 System Architecture (Workflow)
 
-Net Pay
+```
+React UI → Axios → Spring Boot Controller → Service Layer
+→ JPA Repository → MySQL Database → JSON Response → UI Update
+```
 
-Payslip PDF generation using iText
+---
 
-Employees can download payslips anytime
+# 📁 Database Overview
 
-4️⃣ Leave Management
+* Fully normalized schema
+* Every table includes `company_id` for tenant separation
+* Foreign key constraints
+* Soft delete support
+* Indexed fields for performance
 
-Employees can apply for leave
+---
 
-Manager/HM approval workflow
+# 🖥️ Frontend Overview
 
-Commenting system
+### Important Components
 
-Status tracking
+* `RoleNav.jsx` → Automatically loads role-specific navigation
+* `EmployeeAttendanceDashboard.jsx` → Real-time attendance calculations
+* `ViewEmployeePayslip.jsx` → Load & download PDF payslips
+* `EmployeeLeaveManagement.jsx` → Apply/manage leave requests
+* `Admin/HR/Manager Modules` → CRUD for employees, departments, holidays
 
-5️⃣ Company Structure
+---
 
-Department management
+# 🚀 Backend Overview
 
-Designation management
+### Controllers
 
-Company holiday management
+Handle REST endpoints for authentication, employees, attendance, payroll, etc.
 
-📁 Database Overview
+### Services
 
-Fully normalized schema
+Contain business logic such as attendance validation and payroll calculation.
 
-company_id used for tenant separation
+### Schedulers
 
-Indexed fields for performance
+* `AttendanceScheduler` – Monthly attendance generation
+* `AttendanceAbsentScheduler` – Mark absent employees daily
+* `PayslipScheduler` – Auto-generate monthly payslips
 
-Soft-delete support
+---
 
-Tables include:
-users, employees, departments, designations, attendance, payslips, holidays, etc.
+# 🎯 What Makes This HRMS Special?
+
+* Full automation of attendance & payroll
+* Secure, scalable, and multi-tenant architecture
+* Professional UI with real-time updates
+* Complete employee lifecycle in one system
+* Built with enterprise-level engineering practices
+
+---
+
+# 📌 Conclusion
+
+This HRMS is a complete full-stack system.
+
+
