@@ -1,8 +1,3 @@
-﻿# HR-Management-System
-Here is the **exact README.md** — clean, polished, and ready to paste directly into GitHub.
-
----
-
 # 🚀 HR Management System (HRMS) – Full Stack Project
 
 A complete **Human Resource Management System** built using **React**, **Spring Boot**, and **MySQL**.
@@ -10,7 +5,14 @@ The system supports **multi-company (multi-tenant)** architecture with automated
 
 ---
 
-## 🌟 Key Highlights
+## 🌐 Live Application
+
+🔗 **[HRMS Live App](http://40.192.102.179/)**
+
+
+---
+
+##  Key Highlights
 
 * Multi-tenant platform with company-level data isolation
 * Automated attendance + payroll processing using schedulers
@@ -150,7 +152,7 @@ Contain business logic such as attendance validation and payroll calculation.
 
 ---
 
-# 🎯 What Makes This HRMS Special?
+## 🎯 What Makes This HRMS Special?
 
 * Full automation of attendance & payroll
 * Secure, scalable, and multi-tenant architecture
@@ -160,8 +162,17 @@ Contain business logic such as attendance validation and payroll calculation.
 
 ---
 
+### 🧑‍💻 Author
+
+**Ameer Basha Shaik**  
+Full Stack Developer  
+Email: ameershaik815@gmail.com   
+GitHub:https://github.com/Ameer129
+---
+
 # 📌 Conclusion
 
 This HRMS is a complete full-stack system.
+
 
 
