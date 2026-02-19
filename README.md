@@ -162,9 +162,9 @@ Contain business logic such as attendance validation and payroll calculation.
 
 ---
 
-##### 🧑‍💻 Author
+### 🧑‍💻 Author
 
-**Ameer Basha Shaik**  
+****Ameer Basha Shaik****  
 Full Stack Developer  
 Email: ameershaik815@gmail.com   
 GitHub:https://github.com/Ameer129
@@ -173,6 +173,7 @@ GitHub:https://github.com/Ameer129
 # 📌 Conclusion
 
 This HRMS is a complete full-stack system.
+
 
 
 
