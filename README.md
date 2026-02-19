@@ -58,9 +58,9 @@ The system supports **multi-company (multi-tenant)** architecture with automated
 
 ---
 
-# 🔄 Core Features
+## 🔄 Core Features
 
-## 1️⃣ Authentication & Security
+### 1️⃣ Authentication & Security
 
 * JWT-based login
 * Password hashing (BCrypt)
@@ -69,7 +69,7 @@ The system supports **multi-company (multi-tenant)** architecture with automated
 
 ---
 
-## 2️⃣ Attendance Management
+### 2️⃣ Attendance Management
 
 * Clock In / Clock Out with timestamps
 * Real-time timer updates in UI
@@ -78,7 +78,7 @@ The system supports **multi-company (multi-tenant)** architecture with automated
 
 ---
 
-## 3️⃣ Payroll Management
+### 3️⃣ Payroll Management
 
 * Auto payroll generation on 1st of every month
 * Salary structure calculation (Basic, HRA, Allowances)
@@ -87,7 +87,7 @@ The system supports **multi-company (multi-tenant)** architecture with automated
 
 ---
 
-## 4️⃣ Leave Management
+### 4️⃣ Leave Management
 
 * Employees submit leave requests
 * Managers approve/reject with comments
@@ -103,7 +103,7 @@ The system supports **multi-company (multi-tenant)** architecture with automated
 
 ---
 
-# 🧩 System Architecture (Workflow)
+## 🧩 System Architecture (Workflow)
 
 ```
 React UI → Axios → Spring Boot Controller → Service Layer
@@ -112,7 +112,7 @@ React UI → Axios → Spring Boot Controller → Service Layer
 
 ---
 
-# 📁 Database Overview
+## 📁 Database Overview
 
 * Fully normalized schema
 * Every table includes `company_id` for tenant separation
@@ -122,7 +122,7 @@ React UI → Axios → Spring Boot Controller → Service Layer
 
 ---
 
-# 🖥️ Frontend Overview
+## 🖥️ Frontend Overview
 
 ### Important Components
 
@@ -134,7 +134,7 @@ React UI → Axios → Spring Boot Controller → Service Layer
 
 ---
 
-# 🚀 Backend Overview
+## 🚀 Backend Overview
 
 ### Controllers
 
@@ -170,9 +170,10 @@ Email: ameershaik815@gmail.com
 GitHub:https://github.com/Ameer129
 ---
 
-# 📌 Conclusion
+## 📌 Conclusion
 
 This HRMS is a complete full-stack system.
+
 
 
 
